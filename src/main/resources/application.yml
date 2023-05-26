@@ -4,11 +4,7 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "https://reacterrordetectiondeployement.azurewebsites.net"
+            allowedOrigins: "*"
             allowedHeaders: "*"
             allowCredentials: "true"
-            allowedMethods:
-              - GET
-              - POST
-              - DELETE
-              - PUT
+            allowedMethods: ["*"]
