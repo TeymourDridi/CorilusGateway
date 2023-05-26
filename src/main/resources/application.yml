@@ -4,7 +4,9 @@ spring:
       globalcors:
         corsConfigurations:
           '[/**]':
-            allowedOrigins: "*"
+            allowedOrigins:
+              - "https://reacterrordetectiondeployement.azurewebsites.net"
+              - "http://localhost:3000"
             allowedHeaders: "*"
             allowCredentials: "true"
             allowedMethods: ["*"]
