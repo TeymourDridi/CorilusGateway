@@ -26,7 +26,7 @@ public class GatewayConfig {
         @Override
         public GatewayFilter apply(Config config) {
             return (exchange, chain) -> {
-                exchange.getResponse().setStatusCode(HttpStatus.PERMANENT_REDIRECT);
+                exchange.getResponse().setStatusCode(HttpStatus.FOUND);
                 exchange.getResponse().getHeaders().set(HttpHeaders.LOCATION, config.getRedirectUri());
                 return Mono.empty();
             };
