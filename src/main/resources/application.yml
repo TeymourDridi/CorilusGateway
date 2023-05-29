@@ -10,10 +10,4 @@ spring:
               - "http://192.168.56.1:3000"
             allowedHeaders: "*"
             allowCredentials: "true"
-            allowedMethods:
-              -POST
-              -GET
-              -DELETE
-              -PUT
-              -OPTIONS
-              -HEAD
+            allowedMethods: ["*"]
