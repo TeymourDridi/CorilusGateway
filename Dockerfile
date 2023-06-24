@@ -1,4 +1,4 @@
-FROM openjdk:8
-EXPOSE 8888
+FROM openjdk:17
+EXPOSE 8080
 ADD target/gateway.jar gateway.jar
 ENTRYPOINT ["java","-jar","/gateway.jar"]
