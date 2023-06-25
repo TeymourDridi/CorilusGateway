@@ -5,7 +5,7 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins:
-              - "https://reacterrordetectiondeployement.azurewebsites.net"
+              - "https://corilus-facturation.azurewebsites.net"
               - "http://localhost:3000"
               - "http://192.168.56.1:3000"
             allowedHeaders: "*"
